@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VEX Live Device Assistant</title>
+    <script src="https://chat.openai.com/embed.js" async></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f5f5;
+        }
+        .header {
+            background-color: #FF6B00;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+        chat-openai {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            height: 600px;
+            width: 400px;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Need Help Connecting Your Wearable?</h1>
+    </div>
+    <div class="content">
+        <p>Use the VEX Live Device Assistant to check if your wearable is supported and get setup instructions.</p>
+        <p>Scroll down and start chatting with our assistant.</p>
+    </div>
+
+    <chat-openai
+        assistant-id="asst_wS3eUzigIOaa8kS6X9dsFBwB"
+        chat-title="VEX Live Support"
+        welcome-message="Hi! I can help you check if your wearable is supported and how to connect it to VEX Live.">
+    </chat-openai>
+</body>
+</html>
